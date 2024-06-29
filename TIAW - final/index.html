@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em sua conta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Local onde pode fazer login com a conta criada no cadastro -->
+    <div class="wrapper">
+        <form action="">
+            <h2> Entrar </h2>
+            <div class="input-group">
+                <span class="icon">
+                    <ion-icon name="person"></ion-icon>
+                </span>
+                <input type="text" id="nome" placeholder=" Usuário" required>
+                <label id="nomeLabel" for="nome"></label>
+            </div>
+            <div class="input-group">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" id="senha" placeholder=" Senha" required>
+                <label id="senhaLabel" for="senha"></label>
+            </div>
+            <div class="esqueceu">
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+
+            <!-- Recebe os dados do local storage e cria um token para o usuário -->
+            <button onclick="login()" type="submit" class="Login">Login</button>
+            <div class="entrar">
+                <p>Não possui uma conta? <a href="cadastro.html" class="cadastro">Cadastre-se</a></p>
+            </div>
+            <div class="entrar">
+                <p><a href="principal.html" class="cadastro">Voltar para o site</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
